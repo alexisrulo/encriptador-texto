@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #d0ebff;
+  padding-top: 32px;
+  color: #290D4E;
+}
+
+main{
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo{
+  width: 10vw;
+  min-width: 150px;
+  min-height: 150px;
+  padding: 0 16px;
+}
+.logo-icon{
+  fill: #290D4E;
+  width: 44px;
+  height: 44px;
+}
+
+.input-component{
+  padding-top: 80px;
+  padding-right: 80px;
+  width: 55vw;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input{
+  resize: none;
+  background-color: #d0ebff;
+  border: none;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  padding: 8px;
+  width: 100%;
+}
+
+.input:focus{
+  outline: 0;
+}
+
+.caution{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.caution-icon{
+  height: 24px;
+  width: 24px;
+}
+.buttons{
+  display: flex;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.btn{
+  cursor: pointer;
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #290D4E;
+  border-radius: 20px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #290D4E;
+  transition: 0.2s all;
+}
+
+.btn-encripar{
+  background-color: #290D4E;
+  color: #fff;
+}
+
+.btn:hover{
+  background-color: rgba(41, 13, 78, 0.9);
+  color: #fff;
+}
+.btn:active{
+  transform: scale(0.99);
+}
+
+.output-component{
+  max-width: 370px;
+  min-width: 250px;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.output-text{
+  overflow-wrap: break-word;
+}
+
+.witout-messenge{
+  display: none;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+.witout-messenge h3 {
+  font-size: 24px;
+}
+
+.img-looking{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  border-radius: 24px 24px 0 0;
+}
+
+.output{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  padding: 24px;
+}
+
+.show{
+  display: flex;
+}
+
+@media only screen and (max-width: 900px){
+  main{
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .input-component{
+    width: 90vw;
+    height: 45vh;
+    padding-right: 0;
+  }
+  .output-component{
+    height: 45vh;
+    width: 90vw;
+    max-width: none;
+  }
+  .witout-messenge{
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 8px;
+    overflow: hidden;
+  }
+  .img-looking{
+    height: 45vh;
+    width: auto;
+    border-radius: 24px;
+    margin-bottom: 0;
+  }
+  .input-component{
+    padding-top: 8px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .img-looking{
+    display: none;
+  }
+
+  .input-component{
+    width: 90vw;
+    height: 50vh;
+    padding-right: 0;
+  }
+  .output-component{
+    height: 40vh;
+    width: 90vw;
+    max-width: none;
+  }
+
+}
+@media only screen and (max-width: 440px){
+  .buttons{
+    flex-direction: column;
+  }
+
+  
+}
