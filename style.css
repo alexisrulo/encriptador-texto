@@ -161,22 +161,23 @@ main{
   }
   .input-component{
     width: 90vw;
-    height: 45vh;
+    height: 35vh;
     padding-right: 0;
   }
   .output-component{
-    height: 45vh;
+    height: 35vh;
     width: 90vw;
     max-width: none;
+    justify-content: flex-end;
   }
   .witout-messenge{
     flex-direction: row-reverse;
     align-items: center;
     padding-left: 8px;
-    overflow: hidden;
   }
+
   .img-looking{
-    height: 45vh;
+    height: 35vh;
     width: auto;
     border-radius: 24px;
     margin-bottom: 0;
@@ -199,6 +200,7 @@ main{
     height: 40vh;
     width: 90vw;
     max-width: none;
+    justify-content: center;
   }
 
 }
